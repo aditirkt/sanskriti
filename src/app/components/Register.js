@@ -65,7 +65,7 @@ const Register = () => {
   useEffect(() => {
     // Move countToDate inside if you prefer this solution
     // const countToDate = new Date("2025-01-10T00:00:00-06:00");
-    const countToDate = new Date("2025-01-10T00:00:00-06:00");
+    const countToDate = new Date("2025-01-26T00:00:00-06:00");
 
     const flipAllCards = (time) => {
       const seconds = time % 60;
@@ -86,6 +86,11 @@ const Register = () => {
     const intervalId = setInterval(() => {
       const currentDate = new Date();
       const timeBetweenDates = Math.ceil((countToDate - currentDate) / 1000);
+      if (timeBetweenDates <= 0) {
+        clearInterval(intervalId);
+        flipAllCards(0); // Set all digits to 0
+        return;
+      }
       flipAllCards(timeBetweenDates);
     }, 250);
 

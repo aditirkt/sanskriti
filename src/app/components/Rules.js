@@ -91,6 +91,12 @@ const Rules = () => {
                   </ul>
                 </div>
               )}
+              {!Array.isArray(contest.rules.theme) && contest.rules.theme && (
+                <div className="contest-theme">
+                  <span className="rules-highlight">Theme :</span>{" "}
+                  {contest.rules.theme}
+                </div>
+              )}
               <div className="contest-details">
                 <p>
                   <span className="rules-highlight">Time Limit:</span>{" "}
@@ -102,11 +108,11 @@ const Rules = () => {
                 </p>
                 {contest.rules.remarks && (
                   <p>
-                    <span className="rules-highlight">Additional Remarks:</span>
+                    <span className="rules-highlight">Additional Remarks:</span>{" "}
                     {contest.name === "Chess" ? (
                       <span>
                         Chess Kit will be provided.{" "}
-                        <Link href="/chess-rules">
+                        <Link href="/sanskriti/chess-rules">
                           Chess Rules and Regulations
                         </Link>{" "}
                         apply.
@@ -114,7 +120,7 @@ const Rules = () => {
                     ) : contest.name === "Carrom" ? (
                       <span>
                         Carrom Set will be provided.{" "}
-                        <Link href="/carrom-rules">
+                        <Link href="/sanskriti/carrom-rules">
                           Carrom Rules and Regulations
                         </Link>{" "}
                         apply.
@@ -161,6 +167,12 @@ const Rules = () => {
                     </ul>
                   </div>
                 )}
+                {!Array.isArray(contest.rules.theme) && contest.rules.theme && (
+                  <div className="contest-theme">
+                    <span className="rules-highlight">Theme :</span>{" "}
+                    {contest.rules.theme}
+                  </div>
+                )}
                 <div className="contest-details">
                   <p>
                     <span className="rules-highlight">Time Limit:</span>{" "}
@@ -174,11 +186,11 @@ const Rules = () => {
                     <p>
                       <span className="rules-highlight">
                         Additional Remarks:
-                      </span>
+                      </span>{" "}
                       {contest.name === "Chess" ? (
                         <span>
                           Chess Kit will be provided.{" "}
-                          <Link href="/chess-rules">
+                          <Link href={`/sanskriti/chess-rules`}>
                             Chess Rules and Regulations
                           </Link>{" "}
                           apply.
@@ -186,7 +198,7 @@ const Rules = () => {
                       ) : contest.name === "Carrom" ? (
                         <span>
                           Carrom Set will be provided.{" "}
-                          <Link href="/carrom-rules">
+                          <Link href={`/sanskriti/carrom-rules`}>
                             Carrom Rules and Regulations
                           </Link>{" "}
                           apply.

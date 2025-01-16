@@ -102,10 +102,12 @@ const Contests = () => {
           ],
           theme: "Classical",
           timeLimit: "Solo: 4 min, Group: 5 min",
-          thingsToBring: "Required Props and audio",
-          remarks: `Upload audio in .MP3 format on Google Drive and share the link to sanskritiRKT@jkyog.org. 
-        Submission deadline: Jan 20th, 2025, 11:59 PM CDT. Audio file name and email subject format: 
-        Participant Full Name-Contest Name-Group Name. Ensure file access is public.`,
+          thingsToBring:
+            "Required Props and audio file (submitted by Jan 20th, 2025)",
+          remarks: `\nUpload audio in .MP3 format on Google Drive and share the link to sanskritiRKT@jkyog.org.
+        \nSubmission deadline: Jan 20th, 2025, 11:59 PM CDT. \nAudio file name and email subject format: 
+        \nParticipant Full Name-Contest Name-Group Name. Ensure file access is public.
+        \nNo late entries will be considered for the contest. Group category is determined by the eldest kid's age in the group. `,
         },
       },
       {
@@ -122,10 +124,11 @@ const Contests = () => {
           theme: "Folk",
           timeLimit: "Solo: 4 min, Group: 5 min",
           thingsToBring:
-            "Required Props and audio (submitted by Jan 20th, 2025)",
+            "Required Props and audio file (submitted by Jan 20th, 2025)",
           remarks: `Upload audio in .MP3 format on Google Drive and share the link to sanskritiRKT@jkyog.org. 
         Submission deadline: Jan 20th, 2025, 11:59 PM CDT. Audio file name and email subject format: 
-        Participant Full Name-Contest Name-Group Name. Ensure file access is public.`,
+        Participant Full Name-Contest Name-Group Name. Ensure file access is public. 
+        No late entries will be considered for the contest. Group category is determined by the eldest kid's age in the group.`,
         },
       },
       {
@@ -192,11 +195,13 @@ const Contests = () => {
             { group: "3", description: "11-14 yrs" },
             { group: "4", description: "15-18 yrs" },
           ],
-          theme: "An impromptu speech topic will be provided on the spot.",
           timeLimit: "1-2 min",
           thingsToBring: "NA",
-          remarks: `All contestants shall receive the same topic of a general nature and speak for a maximum of two minutes. 
-      Contest begins with only the first participant in the room; others wait outside.`,
+          remarks: `An impromptu speech topic will be provided on the spot.\n 
+          All contestants shall receive the same topic of a general nature and shall speak for a maximum of two minutes. 
+          The topic shall be of reasonable length, shall not require a detailed knowledge and should lead to an opinion or conclusion.
+          When the contest begins, all contestants except the first shall leave the room.
+          After their participation, they shall sit in the room until the contest is over.`,
         },
       },
       {
@@ -233,7 +238,7 @@ const Contests = () => {
             { group: "4", description: "15-18 yrs" },
           ],
           theme: [
-            { group: "1", topic: "Caring is Sharing" },
+            { group: "1", topic: "sharing is Caring" },
             { group: "2", topic: "Smile goes a Mile" },
             { group: "3", topic: "Balance in Life" },
             { group: "4", topic: "The Power of Growth Mindset" },
@@ -303,7 +308,7 @@ const Contests = () => {
             { group: "4", topic: "Balance in Life" },
           ],
 
-          timeLimit: "75 mins",
+          timeLimit: "90 mins",
           thingsToBring:
             "Pencil, sharpener, eraser, coloring material (watercolors, acrylic paints, color pencils, etc.), paint brushes",
           remarks: "Sheet to draw and paint will be provided.",
@@ -545,6 +550,7 @@ const Contests = () => {
                   alt={selectedContest.name}
                   width={500}
                   height={300} // adjust width and height as needed
+                  className="img-fluid"
                 />
               </div>
               {/* Groups Section */}
@@ -574,11 +580,13 @@ const Contests = () => {
                 <li>Things to Bring: {selectedContest.rules.thingsToBring}</li>
                 {selectedContest.rules.remarks && (
                   <li>
-                    Additional Remarks:
+                    Additional Remarks:{" "}
                     {selectedContest.name === "Chess" ? (
                       <span>
                         Chess Kit will be provided.{" "}
-                        <Link href="/chess-rules">
+                        <Link
+                          href={`${process.env.NEXT_PUBLIC_IMAGE_URL}chess-rules`}
+                        >
                           Chess Rules and Regulations
                         </Link>
                         apply.
@@ -586,7 +594,9 @@ const Contests = () => {
                     ) : selectedContest.name === "Carrom" ? (
                       <span>
                         Carrom Set will be provided.{" "}
-                        <Link href="/carrom-rules">
+                        <Link
+                          href={`${process.env.NEXT_PUBLIC_IMAGE_URL}carrom-rules`}
+                        >
                           Carrom Rules and Regulations
                         </Link>
                         apply.
@@ -603,7 +613,7 @@ const Contests = () => {
         <div className="contest-rules">
           <p>
             Read the rules for the various contests{" "}
-            <Link href={`${process.env.NEXT_PUBLIC_IMAGE_URL}/all-rules`}>
+            <Link href={`${process.env.NEXT_PUBLIC_IMAGE_URL}all-rules`}>
               here
             </Link>
           </p>

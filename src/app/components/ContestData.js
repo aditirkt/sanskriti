@@ -62,10 +62,12 @@ const contestData = {
         ],
         theme: "Classical",
         timeLimit: "Solo: 4 min, Group: 5 min",
-        thingsToBring: "Required Props and audio",
+        thingsToBring:
+          "Required Props and audio file(submitted by Jan 20th, 2025)",
         remarks: `Upload audio in .MP3 format on Google Drive and share the link to sanskritiRKT@jkyog.org. 
         Submission deadline: Jan 20th, 2025, 11:59 PM CDT. Audio file name and email subject format: 
-        Participant Full Name-Contest Name-Group Name. Ensure file access is public.`,
+        Participant Full Name-Contest Name-Group Name. Ensure file access is public.
+        No late entries will be considered for the contest. Group category is determined by the eldest kid's age in the group.`,
       },
     },
     {
@@ -80,10 +82,12 @@ const contestData = {
         ],
         theme: "Folk",
         timeLimit: "Solo: 4 min, Group: 5 min",
-        thingsToBring: "Required Props and audio (submitted by Jan 20th, 2025)",
+        thingsToBring:
+          "Required Props and audio file (submitted by Jan 20th, 2025)",
         remarks: `Upload audio in .MP3 format on Google Drive and share the link to sanskritiRKT@jkyog.org. 
         Submission deadline: Jan 20th, 2025, 11:59 PM CDT. Audio file name and email subject format: 
-        Participant Full Name-Contest Name-Group Name. Ensure file access is public.`,
+        Participant Full Name-Contest Name-Group Name. Ensure file access is public.
+        No late entries will be considered for the contest. Group category is determined by the eldest kid's age in the group.`,
       },
     },
     {
@@ -145,11 +149,13 @@ const contestData = {
           { group: "3", description: "11-14 yrs" },
           { group: "4", description: "15-18 yrs" },
         ],
-        theme: "An impromptu speech topic will be provided on the spot.",
         timeLimit: "1-2 min",
         thingsToBring: "NA",
-        remarks: `All contestants shall receive the same topic of a general nature and speak for a maximum of two minutes. 
-      Contest begins with only the first participant in the room; others wait outside.`,
+        remarks: `An impromptu speech topic will be provided on the spot.
+        All contestants shall receive the same topic of a general nature and shall speak for a maximum of two minutes. 
+        The topic shall be of reasonable length, shall not require a detailed knowledge and should lead to an opinion or conclusion.
+        When the contest begins, all contestants except the first shall leave the room.
+      After their participation, they shall sit in the room until the contest is over.`,
       },
     },
     {
@@ -184,14 +190,14 @@ const contestData = {
           { group: "4", description: "15-18 yrs" },
         ],
         theme: [
-          { group: "1", topic: "Caring is Sharing" },
+          { group: "1", topic: "Sharing is Caring" },
           { group: "2", topic: "Smile goes a Mile" },
           { group: "3", topic: "Balance in Life" },
           { group: "4", topic: "The Power of Growth Mindset" },
         ],
         timeLimit: "3-4 min",
         thingsToBring:
-          "PowerPoint presentation with max 12 slides or Poster board",
+          "PowerPoint presentation with max 12 slides or Poster board (font big enough for judges to view from distance)",
         remarks: `Upload presentation (.ppt file) to Google Drive and share the link to sanskritiRKT@jkyog.org. 
       Submission deadline: Jan 20th, 2025, 11:59 PM CDT. File name and email subject format: Participant Full Name-Contest Name-Group Name. Ensure file access is public.`,
       },
@@ -250,7 +256,7 @@ const contestData = {
           { group: "4", topic: "Balance in Life" },
         ],
 
-        timeLimit: "75 mins",
+        timeLimit: "90 mins",
         thingsToBring:
           "Pencil, sharpener, eraser, coloring material (watercolors, acrylic paints, color pencils, etc.), paint brushes",
         remarks: "Sheet to draw and paint will be provided.",

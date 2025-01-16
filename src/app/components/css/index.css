@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
-@import '~@fortawesome/fontawesome-free/css/all.min.css';
-@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap");
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
 
 .cabin-sketch-bold {
   font-family: "Cabin Sketch", sans-serif;
@@ -28,41 +26,44 @@
 */
 :root {
   --meta-font: "Bubblegum Sans", sans-serif;
-  --primary-color: #FF8C42; /* Vibrant saffron orange for energy and CTA buttons */
+  --primary-color: #ff8c42; /* Vibrant saffron orange for energy and CTA buttons */
   --secondary-color: #150a23; /* Rich purple for headers and accents */
   --text-color: #282127; /* Neutral dark gray for better readability */
-  --bg-color: #FFF8E1; /* Light beige for a softer, welcoming background */
+  --bg-color: #fff8e1; /* Light beige for a softer, welcoming background */
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  
-  --gold: #FFD700; /* Gold for subtle highlights or borders */
-  --white: #FFFFFF; /* White for contrast and clean design */
+
+  --gold: #ffd700; /* Gold for subtle highlights or borders */
+  --white: #ffffff; /* White for contrast and clean design */
   --third-color: #88314e;
-  --fourth-color: #c2a58d; 
-  --navbar-height: 50px; 
+  --fourth-color: #c2a58d;
+  --navbar-height: 50px;
   --primary-color-rgb: 255, 140, 66; /* RGB equivalent */
   --third-color-rgb: 136, 49, 78; /* RGB equivalent */
 }
 
-*{
+* {
   font-family: var(--meta-font);
-  margin: 0 ; padding: 0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  outline:none;
-  border:none;
+  outline: none;
+  border: none;
   text-decoration: none;
-  text-transform:capitalize;
-  transition: .2s linear;
-
+  text-transform: capitalize;
+  transition: 0.2s linear;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -72,13 +73,13 @@ html {
   overflow-x: hidden;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 1rem;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: transparent;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: var(--white);
 }
 
@@ -86,7 +87,7 @@ body {
   background-color: var(--bg-color);
 }
 
-.card-shadow{
+.card-shadow {
   box-shadow: 0px 20px 20px -17px rgba(255, 159, 16, 0.53);
 }
 .card-shadow:hover {
@@ -114,4 +115,15 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.button-custom {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 16px;
 }
