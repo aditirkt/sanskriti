@@ -6,7 +6,9 @@
 }
 /* Schedule Container Styling */
 .schedule-container {
-  background-color: var(--bg-color); /* Light beige or your page's theme background */
+  background-color: var(
+    --bg-color
+  ); /* Light beige or your page's theme background */
   text-align: center;
   color: var(--secondary-color); /* Complementary text color */
   border-radius: 15px; /* Soft rounded corners */
@@ -19,13 +21,15 @@ h1 {
   letter-spacing: 0.1rem;
 }
 
-.info-list, .early-bird {
+.info-list,
+.early-bird {
   list-style: none; /* Remove default list styling */
   padding: 0;
   text-align: center; /* Align text for readability */
 }
 
-.info-list li {
+.info-list li,
+.bullet-header {
   font-size: 1.4rem;
   margin-bottom: 1rem;
   color: var(--text-dark); /* Neutral text color */
@@ -57,7 +61,9 @@ h1 {
 }
 
 .header-banner:hover {
-  background-color: var(--highlight-color); /* Change on hover for interactivity */
+  background-color: var(
+    --highlight-color
+  ); /* Change on hover for interactivity */
   transition: background-color 0.3s ease;
 }
 
@@ -79,7 +85,8 @@ h1 {
     font-size: 1.5rem;
   }
 
-  .info-list li, .sub-list li {
+  .info-list li,
+  .sub-list li {
     font-size: 1rem;
   }
 }
@@ -128,13 +135,82 @@ h1 {
   font-style: italic;
 }
 
-.bullet-header{
-  color:var(--primary-color);
+.bullet-header {
+  color: var(--primary-color);
 }
 
-.bullet-content{
-  color:var(--secondary-color);
+.bullet-content {
+  color: var(--secondary-color);
 }
 .sub-list span {
-  color:var(--primary-color);
+  color: var(--primary-color);
+}
+
+.event-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.day-card-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.day-card {
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.day-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.day-card-title {
+  font-size: 1.25rem; /* Slightly smaller */
+  font-weight: 600;
+  margin-bottom: 0.5rem; /* Reduced margin */
+  text-align: center;
+}
+
+.day-card-details {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.day-card-details h5 {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.day-card-details h5 svg {
+  margin-right: 0.5rem;
+}
+
+.day-card-details ul {
+  padding-left: 1rem;
+  list-style-type: none;
+}
+
+.day-card-details ul li {
+  margin-bottom: 0.5rem;
+}
+
+.contest-type {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.text-orange {
+  color: var(--primary-color);
+}
+
+.group-display {
+  font-size: 1.1rem;
 }
