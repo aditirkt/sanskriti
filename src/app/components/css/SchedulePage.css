@@ -1,0 +1,140 @@
+/* General Schedule Section Styling */
+.schedule-section {
+  background-color: var(--bg-color); /* Light beige background */
+  padding: 3rem 1rem; /* Padding for spacing */
+  text-align: center; /* Center all content inside */
+}
+/* Schedule Container Styling */
+.schedule-container {
+  background-color: var(--bg-color); /* Light beige or your page's theme background */
+  text-align: center;
+  color: var(--secondary-color); /* Complementary text color */
+  border-radius: 15px; /* Soft rounded corners */
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem; /* Reduced margin */
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.info-list, .early-bird {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  text-align: center; /* Align text for readability */
+}
+
+.info-list li {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--text-dark); /* Neutral text color */
+  line-height: 1.5; /* Improve readability */
+}
+
+.sub-list {
+  list-style-type: disc;
+  color: var(--text-dark-light); /* Slightly lighter for sub-items */
+}
+
+.sub-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Schedule Note */
+.schedule-note {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: var(--text-muted); /* Muted color for less emphasis */
+  font-style: italic;
+}
+
+/* Hover Effects */
+.event-info:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover */
+  transition: transform 0.3s ease;
+}
+
+.header-banner:hover {
+  background-color: var(--highlight-color); /* Change on hover for interactivity */
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .event-details-container {
+    padding: 2rem 1rem;
+  }
+
+  .event-title {
+    font-size: 2rem;
+  }
+
+  .early-bird {
+    font-size: 1rem;
+  }
+
+  .section-heading {
+    font-size: 1.5rem;
+  }
+
+  .info-list li, .sub-list li {
+    font-size: 1rem;
+  }
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.info-list li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.sub-list {
+  list-style-type: disc; /* Restore bullets for sub-list */
+  list-style-position: inside; /* Ensure bullets are inside the text box */
+  padding-left: 0; /* Remove additional padding */
+  text-align: center; /* Align text and bullets to the left */
+  margin: 0 auto; /* Center the block itself */
+  max-width: 600px; /* Optional: Keep it visually contained */
+}
+
+.sub-list li {
+  margin-bottom: 0.5rem; /* Space between items */
+  font-size: 1.1rem;
+  color: var(--text-dark-light); /* Slightly lighter color for sub-items */
+}
+
+.bullet-header {
+  font-weight: bold;
+  color: var(--highlight-color); /* Different color for headers */
+}
+
+.bullet-content {
+  font-weight: normal;
+  color: var(--text-dark);
+}
+
+.schedule-note {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.bullet-header{
+  color:var(--primary-color);
+}
+
+.bullet-content{
+  color:var(--secondary-color);
+}
+.sub-list span {
+  color:var(--primary-color);
+}

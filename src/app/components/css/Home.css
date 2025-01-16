@@ -1,0 +1,85 @@
+#hero {
+    padding-top: 50px; /* Ensure the hero section isn't hidden under the navbar */
+  }
+
+.home-container {
+    position: relative;
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: auto; /* Adjust height to maintain aspect ratio */
+  }
+  
+  
+/* Scroll to Top Button */
+.scroll-to-top {
+  content: ↑;
+    position: fixed;
+    bottom: 20px;  /* Adjust position from the bottom of the page */
+    right: 20px;   /* Adjust position from the right of the page */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);  /* White text and icon */
+    border: 2px solid var(--secondary-color); 
+    border-radius: 50%;  /* Circular button */
+    width: 60px;
+    height: 60px;  /* Adjust size to be prominent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;  /* Adjust icon size */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Subtle shadow for 3D effect */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;  /* Smooth transition for hover effect */
+  }
+  
+  /* Hover Effect */
+  .scroll-to-top:hover {
+    background-color: var(--secondary-color);  /* Darker blue on hover */
+    transform: translateY(-5px);  /* Lift the button a bit */
+    color:var(--primary-color);
+  }
+  
+  /* Icon Styling */
+  .icon-up-arrow {
+    font-size: 2rem;  /* Adjust size for a bold, clear up arrow */
+    font-weight: bold;
+  }
+  
+  /* Accessibility */
+  .scroll-to-top:focus {
+    outline: 2px solid #ff9900;  /* Ensure it's visible when focused */
+    outline-offset: 2px;
+  }
+  
+  .anim-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  /* Class to apply when the section is visible */
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Optional: Add different effects based on the section */
+  #hero.fade-in {
+    transform: translateY(0); /* Hero section could have a different effect */
+  }
+  
+  #sanskriti.fade-in {
+    transform: translateY(0); /* Sanskriti section */
+  }
+  
+  #highlights.fade-in,
+  #contests.fade-in,
+  #register.fade-in,
+  #photo-gallery.fade-in,
+  #testimonials.fade-in,
+  #contact.fade-in,
+  #faq.fade-in,
+  #sponsors.fade-in {
+    transform: translateY(0); /* All sections have a similar slide effect */
+  }

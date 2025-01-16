@@ -1,0 +1,123 @@
+.rules-container {
+    background-color: var(--bg-color); /* Light beige background */
+    padding: 3rem 1rem; /* Padding for spacing */
+    box-shadow: var(--box-shadow); /* Soft shadow for depth */
+    margin: 50px auto; 
+}
+.page-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .contest-section {
+    margin-bottom: 2rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .contest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .contest-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .contest-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contest-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contest-groups,
+  .contest-theme,
+  .contest-details {
+    margin-bottom: 1rem;
+  }
+  
+  .contest-card  ul {
+    padding-left: 1.5rem;
+  }
+  
+  .contest-card  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .contest-card  a {
+    color: var(--third-color);
+    text-decoration: none;
+  }
+  
+  .contest-card  a:hover {
+    text-decoration: underline;
+  }
+
+.contest-title{
+text-align: center;
+color: var(--primary-color);
+  }
+
+.rules-highlight{
+    color: var(--primary-color);
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Allows buttons to wrap to the next line */
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  .filter-button {
+    padding: 10px 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    flex: 1 1 calc(33.33% - 20px); /* Flexible width for buttons */
+  max-width: 150px; /* Prevents buttons from getting too wide */
+  text-align: center; /* Centers the button text */
+  color:var(--secondary-color);
+  }
+  
+  .filter-button:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .filter-button.active {
+    background-color:var(--primary-color);
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Media query for tablets and small laptops */
+@media (max-width: 768px) {
+    .filter-button {
+      flex: 1 1 calc(50% - 20px); /* Buttons take 50% width in two columns */
+    }
+  }
+  
+  /* Media query for phones */
+  @media (max-width: 480px) {
+    .filter-button {
+      flex: 1 1 100%; /* Buttons take full width in one column */
+    }
+  }

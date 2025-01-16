@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+
+
+.cabin-sketch-bold {
+  font-family: "Cabin Sketch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bubblegum-sans-regular {
+  font-family: "Bubblegum Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* test- color pallette
+  --meta-font: "Cabin Sketch", sans-serif;
+  --primary-color: #D56D2F;
+  --secondary-color: #3c3556;
+  --text-color: #3C3556;
+  --bg-color: #88314e;
+  --box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+  
+  
+*/
+:root {
+  --meta-font: "Bubblegum Sans", sans-serif;
+  --primary-color: #FF8C42; /* Vibrant saffron orange for energy and CTA buttons */
+  --secondary-color: #150a23; /* Rich purple for headers and accents */
+  --text-color: #282127; /* Neutral dark gray for better readability */
+  --bg-color: #FFF8E1; /* Light beige for a softer, welcoming background */
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  
+  --gold: #FFD700; /* Gold for subtle highlights or borders */
+  --white: #FFFFFF; /* White for contrast and clean design */
+  --third-color: #88314e;
+  --fourth-color: #c2a58d; 
+  --navbar-height: 50px; 
+  --primary-color-rgb: 255, 140, 66; /* RGB equivalent */
+  --third-color-rgb: 136, 49, 78; /* RGB equivalent */
+}
+
+*{
+  font-family: var(--meta-font);
+  margin: 0 ; padding: 0;
+  box-sizing: border-box;
+  outline:none;
+  border:none;
+  text-decoration: none;
+  text-transform:capitalize;
+  transition: .2s linear;
+
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  scroll-padding-top: 0; /* Set it to 0 to prevent issues with fixed navbar */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+  width: 1rem;
+}
+::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--white);
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.card-shadow{
+  box-shadow: 0px 20px 20px -17px rgba(255, 159, 16, 0.53);
+}
+.card-shadow:hover {
+  box-shadow: 0px 20px 35px -16px rgba(255, 159, 16, 0.6);
+  background-color: whitesmoke;
+  transform: translateY(-5px);
+  transition: all 0.3s;
+}
+
+/* Centered container with consistent page width */
+.page-container {
+  max-width: 1140px; /* Adjust based on design needs */
+  margin: 0 auto;
+  padding: 0 15px; /* Add padding for better spacing */
+}
+
+/* Other shared styles */
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,200 @@
+/* General Section Styles */
+.contests-section {
+    background-color: var(--bg-color); /* Light beige background */
+    padding: 3rem 1rem; /* Padding for spacing */
+    text-align: center; /* Center all content inside */
+    
+}
+  
+.contests-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 2rem; /* Reduced margin */
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.contests-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.onstage-container, .offstage-container {
+    flex: 1;
+}
+
+.contest-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contest-item {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contest-item:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Overlay: Dim background with a soft blur effect */
+.contest-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+  
+.contest-modal-content {
+    background: linear-gradient(145deg, #ffffff, #f4f4f4);
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    padding: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow-y: auto; /* Ensure content scrolls inside */
+    max-height: 80vh; /* Limit height to 80% of viewport height */
+    animation: fadeIn 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    z-index: 1050;  /* Make sure it's above other content */
+}
+
+/* Close button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover {
+    color: #e74c3c;
+}
+
+.contest-image-container {
+    width: 100%; /* Set to full width of the parent container */
+    max-width: 200px; /* Add a max-width to constrain size */
+    height: 150px; /* Fixed height for uniformity */
+    margin: 0 auto; /* Center align */
+    overflow: hidden; /* Prevent images from spilling outside */
+    border: 2px solid var(--primary-color); /* Subtle border */
+    border-radius: 10px; /* Rounded corners for a card effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Smooth shadow effect */
+    display: flex; /* Flexbox for better alignment */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+}
+
+.contest-image {
+    width: 100%; /* Image scales with the container */
+    height: 100%; /* Fills the container height */
+    object-fit: cover; /* Ensures the image fits while maintaining aspect ratio */
+    object-position: center; /* Keeps the focus on the center of the image */
+}
+
+
+/* Section title (e.g., "Groups" and "Rules") */
+.section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 15px 0 10px;
+    text-align: left;
+}
+
+.theme-list {
+    text-align: left;
+}
+
+/* Typography */
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 10px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+p strong {
+    color: #333;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contest-modal-content {
+        width: 95%;
+        padding: 15px;
+        max-width: 600px; /* Adjust if necessary to fit smaller screens better */
+        overflow-y: auto; /* Ensures content is scrollable if overflow occurs */
+    }
+
+    .close-button {
+        font-size: 1rem;
+    }
+    .contest-image-container {
+        width: 100%; /* Adjust width to be responsive */
+        margin: 0 auto; /* Centering the image container */
+        display: flex; /* Ensures content within the container is aligned */
+        justify-content: center; /* Center align the items horizontally */
+        align-items: center; /* Center align the items vertically */
+    }
+    .contest-image {
+        width: 70%;
+        max-height: 150px;
+        object-fit: cover; /* Ensures the aspect ratio is maintained without distortion */
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+}
+
+a{
+    color: var(--primary-color);
+}

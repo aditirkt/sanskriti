@@ -1,0 +1,93 @@
+/* Container padding for fixed navbar */
+.Container {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: calc(3rem + 80px); /* Adjust top padding for navbar */
+}
+
+/* Fixed Navbar Styles */
+.navbar-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  box-shadow: 0 2px 5px var(--secondary-color);
+  height: 55px; /* Consistent navbar height */
+  padding: 0 1.5rem;
+  transition: top 0.3s;
+}
+
+html {
+  scroll-padding-top: 55px; /* Offset for fixed navbar */
+  scroll-behavior: smooth;
+}
+
+/* Flex container for navbar items */
+.Container .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem; /* Adjust padding as needed */
+}
+
+/* Navbar Links */
+.navbar-custom .nav-link {
+  font-size: 1.1rem;
+  margin-left: 1.5rem;
+  color: var(--secondary-color);
+  padding: 0.5rem 0; /* Control padding for height consistency */
+  transition: color 0.3s;
+}
+
+/* Hover and Active Link Styles */
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  color: var(--third-color);
+}
+
+.nav-link:hover {
+  cursor: pointer;
+}
+/* Logo Styles */
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.3s;
+}
+
+/* Logo Hover Effect */
+.navbar-logo:hover {
+  transform: scale(1.1);
+}
+
+/*@media (min-width: 992px) {
+    .navbar-custom {
+      height: 65px; /* Slightly larger navbar on bigger screens */
+/* }
+  }*/
+
+.navbar-collapse {
+  background-color: var(--primary-color); /* Set to your primary color */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar-collapse.show {
+  background-color: var(
+    --primary-color
+  ); /* Ensure color persists when expanded */
+}
+
+/* Optional: Adjust nav-link styling for better contrast */
+.navbar-collapse .nav-link {
+  color: var(--secondary-color); /* Contrast text color */
+}
+
+.navbar-collapse .nav-link:hover {
+  color: var(--highlight-color); /* Highlight color on hover */
+}

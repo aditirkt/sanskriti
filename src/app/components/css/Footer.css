@@ -1,0 +1,22 @@
+.footer-ccontainer{
+    background-color: var(--primary-color); /* Soft beige background */
+    padding: 3rem 1rem 0rem;
+}
+.text-danger{
+    color:var(--secondary-color);
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .social-media-link {
+    color: #4b4b4b;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+
+

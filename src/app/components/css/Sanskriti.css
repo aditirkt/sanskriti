@@ -1,0 +1,57 @@
+/* Sanskriti Section */
+.sanskriti-section {
+    background-color: var(--bg-color); /* Light beige background */
+    padding: 3rem 1rem; /* Padding for spacing */
+    text-align: center; /* Center all content inside */
+    box-shadow: var(--box-shadow); /* Soft shadow for depth */
+  }
+  
+  .sanskriti-title {
+    font-size: 3.5rem; /* Large size for the title */
+    font-weight: 700;
+    font-family: var(--meta-font); /* Use Cabin Sketch for title */
+    color: var(--secondary-color); /* Rich purple for title */
+    margin-bottom: 2rem; /* Space below title */
+    letter-spacing: 0.1rem;
+  }
+  
+  .tagline {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--primary-color); /* Vibrant saffron for emphasis */
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+/* Content Text */
+.content {
+    font-size: 1.4rem; /* Increased font size for better visibility */
+    color: var(--text-color); /* Neutral dark gray for better contrast */
+    line-height: 1.8; /* Increased line height for better readability */
+    margin: 0 auto;
+    max-width: 800px; /* Keep a maximum width for readability */
+    padding: 0 1rem; /* Add padding for spacing */
+  }
+  
+  
+  .sanskriti-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    .sanskriti-title {
+      font-size: 2.5rem; /* Adjust title size for smaller screens */
+    }
+  
+    .tagline {
+      font-size: 1.4rem; /* Adjust tagline size */
+    }
+  
+    .content {
+      font-size: 1.1rem; /* Adjust body text size */
+    }
+  }
+  

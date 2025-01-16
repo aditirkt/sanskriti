@@ -1,0 +1,221 @@
+/* General Gallery Section */
+.photo-gallery {
+  background-color: var(--bg-color); /* Light beige background */
+  padding: 3rem 1.5rem;
+  text-align: center;
+  box-shadow: var(--box-shadow); /* Soft shadow for depth */
+  border-radius: 15px;
+}
+
+/* Gallery Title */
+.photo-gallery h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.photo-slider-container{
+padding: 15px;
+}
+
+/* Individual Photo Card */
+.photo-card {
+  position: relative;
+  width: 100%;
+  max-width: 220px;
+  height: 300px;
+  background: var(--primary-color);
+  border-radius: 15px;
+  padding: 5px;
+  cursor: pointer;
+  overflow: hidden; /* Crop image overflow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+/* Photo Styling */
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.photo-card:hover {
+  transform: translateY(-5px); /* Subtle lift effect */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.photo-card:hover img {
+  transform: scale(1.05); /* Slight zoom */
+  filter: grayscale(50%); /* Desaturate effect */
+}
+
+/* Zoom-In Icon on Hover */
+.photo-card:hover::after {
+  content: '\f00e'; /* FontAwesome's zoom icon unicode */
+  font-family: "Font Awesome 5 Free"; /* Specify FontAwesome */
+  font-weight: 900; /* Use bold icons */
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0.6); /* Dark background for visibility */
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.modal-photo {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+  background: #ff6f61;
+  color: white;
+}
+
+/* Video Section */
+.video-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-section {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background-color: var(--bg-color);
+  border-radius: 15px;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 16 / 9; /* Maintain video aspect ratio */
+  margin: 0 auto;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.video-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Scroll Buttons */
+.prev-btn, .next-btn,
+.slider-prev-btn,.slider-next-btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.slider-prev-btn,.slider-next-btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Slick Carousel Dots */
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: pink;
+}
+
+.slick-dots li button:before {
+  color: var(--primary-color);
+}
+.modal-content.landscape {
+  width: 80%;
+  height: auto;
+}
+
+.modal-content.portrait {
+  width: auto;
+  height: 80%;
+}
+

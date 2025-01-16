@@ -1,0 +1,109 @@
+.testimonials-section {
+    background-color: var(--bg-color); /* Light beige background */
+    padding: 3rem 1rem; 
+    text-align: center; /* Center all content inside */
+    box-shadow: var(--box-shadow); /* Soft shadow for depth */
+  }
+  
+    
+.testimonials-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--);
+  margin-bottom: 2rem; /* Reduced margin */
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+  .testimonials-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 0 20px; /* Added padding to prevent image from going to the edge */
+  }
+  
+  .testimonial-image-container {
+    width: 40%; /* Adjusted to keep a balance */
+    position: relative;
+    max-width: 500px; /* Ensure the image doesn't stretch too wide */
+  }
+  
+  .testimonial-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease; /* Smooth transition for rotation */
+  }
+
+  .testimonial-card {
+    width: 55%; /* Ensuring card has enough space on the right */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .testimonial-message {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-author {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: var(--third-color);
+  }
+  
+  .dot:hover {
+    background-color: var(--third-color);
+  }
+  
+  @media (max-width: 768px) {
+    .testimonials-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10px; /* Ensure padding on smaller screens */
+    }
+  
+    .testimonial-image-container {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .testimonial-card {
+      width: 80%;
+    }
+  }
+  

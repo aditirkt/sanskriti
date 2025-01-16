@@ -1,0 +1,42 @@
+
+  
+.terms-container {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  
+  /* Heading Styling */
+  .terms-container h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem; /* Reduced margin */
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align:center;
+  }
+  
+  /* Paragraph Styling */
+  .terms-container p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  /* List Styling */
+  .terms-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  
+  .terms-container li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #555;
+  }
+  

@@ -1,0 +1,220 @@
+.register-section {
+  background-color: var(--bg-color); /* Light beige background */
+    padding: 3rem 1rem; /* Padding for spacing */
+    text-align: center; /* Center all content inside */
+    box-shadow: var(--box-shadow); /* Soft shadow for depth */
+}
+
+.register-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center; /* Ensure container content is centered */
+}
+
+.register-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  text-align: center; /* Fix alignment */
+}
+
+.deadlines, .bundle-desc {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  text-align: center; /* Ensure alignment */
+}
+
+.deadlines span, .bundle-desc span {
+  color: var(--highlight-color);
+  font-weight: bold;
+}
+
+/* Timer Styling */
+.container-timer {
+  display: flex;
+  gap: 1em;
+  justify-content: center; /* Center-align all timer segments */
+  margin-bottom: 2rem; /* Add spacing from other sections */
+  font-size: 2rem;
+}
+
+.container-timer-segment {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+  align-items: center; /* Ensure segments are centered */
+}
+
+.timer-flip-card {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.1em;
+  margin: 0 0.5em;
+}
+
+.top,
+.bottom,
+.timer-flip-card .top-flip,
+.timer-flip-card .bottom-flip {
+  height: 0.75em;
+  line-height: 1;
+  padding: 0.25em;
+  overflow: hidden;
+}
+
+.top,
+.timer-flip-card .top-flip {
+  background-color: var(--primary-color);
+  color:#fce8a1;
+  border-top-right-radius: 0.1em;
+  border-top-left-radius: 0.1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bottom,
+.timer-flip-card .bottom-flip {
+  background-color:var(--primary-color);
+  color:#fce8a1;
+  display: flex;
+  align-items: flex-end;
+  border-bottom-right-radius: 0.1em;
+  border-bottom-left-radius: 0.1em;
+}
+
+.timer-flip-card .top-flip {
+  position: absolute;
+  width: 100%;
+  animation: flip-top 250ms ease-in;
+  transform-origin: bottom;
+}
+
+@keyframes flip-top {
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+
+.timer-flip-card .bottom-flip {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  animation: flip-bottom 250ms ease-out 250ms;
+  transform-origin: top;
+  transform: rotateX(90deg);
+}
+
+@keyframes flip-bottom {
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+.timer-segment-title {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-top: 1rem; /* Add margin for consistent spacing */
+}
+
+/* Ticket Cards Styling */
+.ticket-cards,.register-container {
+  display: flex;
+  flex-wrap: wrap; /* Enables wrapping if space is insufficient */
+  gap: 2rem;
+  justify-content: center; /* Centers the cards in the row */
+}
+
+.ticket-card {
+  flex: 1 1 calc(25% - 2rem); /* Each card takes up 25% width minus the gap */
+  max-width: 300px; /* Prevents cards from growing too large */
+  min-width: 200px; /* Ensures cards don't shrink too small */
+  background-color: #fce8a1;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ticket-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.3);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For medium screens (e.g., tablets) */
+@media (max-width: 768px) {
+  .ticket-card {
+    flex: 1 1 calc(50% - 2rem); /* Each card takes 50% width */
+  }
+}
+
+/* For small screens (e.g., smartphones) */
+@media (max-width: 480px) {
+  .ticket-card {
+    flex: 1 1 100%; /* Each card takes full width */
+  }
+}
+
+.ticket-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.ticket-price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.ticket-description {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+/* Register Button */
+.register-button {
+  background-color: var(--primary-color);
+  color: #fce8a1;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.bundle-section {
+  margin-top: 3rem;
+}
+
+.bundle-desc{
+  margin-bottom: 2rem;
+}
+
+.deadline-section {
+  margin-top: 2rem; /* Spacing from the ticket section */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  background-color: #fce8a1;
+}
+
+.deadline-section .ticket-description {
+  margin-bottom: 1rem; /* Spacing between deadline entries */
+}
+

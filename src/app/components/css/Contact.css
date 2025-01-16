@@ -1,0 +1,16 @@
+/* General Section Styles */
+.contact-section {
+    background-color: var(--bg-color); /* Soft beige background */
+    padding: 3rem 1rem;
+}
+
+.contact-section h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem; /* Reduced margin */
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.container-contact{
+    text-align: center;
+}

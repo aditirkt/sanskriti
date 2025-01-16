@@ -1,0 +1,55 @@
+.Sponsors-section {
+    background-color: var(--bg-color); /* Light beige background */
+    padding: 3rem 1rem; /* Padding for spacing */
+    text-align: center; /* Center all content inside */
+    box-shadow: var(--box-shadow); /* Soft shadow for depth */
+  }
+  
+  
+  .Sponsors-container h1 {
+    font-size: 3.5rem; /* Large size for the title */
+    font-weight: 700;
+    font-family: var(--meta-font); /* Use Cabin Sketch for title */
+    color: var(--secondary-color); /* Rich purple for title */
+    margin-bottom: 2rem; /* Space below title */
+    text-transform: uppercase;
+  }
+
+  .Sponsors-text {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .Sponsors-text p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+  }
+  
+  .Sponsors-logos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Ensure the layout is responsive */
+  }
+  
+  .Sponsor-link {
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .Sponsor-link:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
+  .Sponsor-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Sponsor-logo:hover {
+   cursor: pointer;
+  }
