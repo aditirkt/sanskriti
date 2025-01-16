@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import FAQItem from "./FAQItem";
-import { Link } from "next/link";
+import Link from "next/link"; // Import Link from Next.js
 
 import "./css/FAQ.css";
 
@@ -140,7 +140,13 @@ const FAQ = () => {
       answer: (
         <span>
           To get access to the terms and conditions of the contests, kindly
-          visit <Link to="/terms-and-conditions">Terms And Conditions</Link>.
+          visit{" "}
+          <Link
+            href={`${process.env.NEXT_PUBLIC_IMAGE_URL}terms-and-conditions`}
+          >
+            Terms And Conditions
+          </Link>
+          .
         </span>
       ),
     },
