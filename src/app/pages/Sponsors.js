@@ -5,6 +5,8 @@ import "../components/css/Sponsors.css";
 const patelImg = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/patelBrothers.png`;
 const indiaBazarImg = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/IndiaBazaar.png`;
 const dfwIcsImg = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/DFWICS.jpg`;
+const guptaAgarwalImg = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/GuptaAgarwal.jpg`;
+const sbImg = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/sb.jpeg`;
 
 const Sponsors = () => {
   const sponsors = [
@@ -25,6 +27,18 @@ const Sponsors = () => {
       name: "DFW ICS",
       logo: dfwIcsImg,
       website: "http://www.dfwics.org/",
+    },
+    {
+      id: 4,
+      name: "SB International, Inc.",
+      logo: sbImg,
+      website: "https://sbisteel.com/",
+    },
+    {
+      id: 5,
+      name: "Gupta Agarwal Charitable Foundation",
+      logo: guptaAgarwalImg,
+      website: "https://www.guptacapitalgroup.com/philanthropy",
     },
   ];
 
@@ -63,7 +77,7 @@ const Sponsors = () => {
                 alt={`${sponsor.name} Logo`}
                 className="Sponsor-logo"
                 width={200} // You can set a specific width and height
-                height={100} // Adjust as necessary for the logos
+                height={200} // Adjust as necessary for the logos
               />
             </a>
           ))}
