@@ -1,166 +1,164 @@
 /* General Section Styles */
 .highlights-section {
-    background-color: var(--bg-color); /* Light beige background */
-    padding: 3rem 1rem; /* Padding for spacing */
-    text-align: center; /* Center all content inside */
+  background-color: var(--bg-color); /* Light beige background */
+  padding: 3rem 1rem; /* Padding for spacing */
+  text-align: center; /* Center all content inside */
 }
-  
+
 .highlights-section h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--secondary-color);
-    margin-bottom: 2rem; /* Reduced margin */
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 2rem; /* Reduced margin */
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
-  
+
 /* Card Container */
 .highlights-section .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
-  
+
 /* Individual Card */
 .highlights-section .card {
-    flex: 1 1 calc(33.333% - 2rem);
-    max-width: calc(33.333% - 2rem);
-    min-width: 280px;
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 0.5rem; /* Reduced padding */
-    align-items: center;
+  flex: 1 1 calc(33.333% - 2rem);
+  max-width: calc(33.333% - 2rem);
+  min-width: 280px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 0.5rem; /* Reduced padding */
+  align-items: center;
 }
-  
+
 .highlights-section .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
-  
+
 /* Card Image Container */
 .card-image {
-    padding: 0.5rem; /* Reduced padding */
+  padding: 0.5rem; /* Reduced padding */
 }
-  
+
 .highlights-section .card:nth-child(odd) {
-    background-color: #fce8a1;
+  background-color: #fce8a1;
 }
 
 .highlights-section .card:nth-child(even) {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 /* Card Image */
 .highlights-section .card-image img {
-    width: auto; /* Ensure the image spans the container */
-    height: auto; /* Maintain the original aspect ratio */
-    max-height: 120px; /* Constrain maximum height */
-    filter: grayscale(100%); /* Start with grayscale */
-    transition: filter 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+  width: auto; /* Ensure the image spans the container */
+  height: auto; /* Maintain the original aspect ratio */
+  max-height: 120px; /* Constrain maximum height */
+  filter: grayscale(100%); /* Start with grayscale */
+  transition: filter 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
 }
 
-  
 .highlights-section .card-image img:hover {
-    filter: grayscale(0);
-    transform: scale(1.05);
+  filter: grayscale(0);
+  transform: scale(1.05);
 }
-  
+
 /* Card Title */
 .highlights-section .card-title {
-    font-size: 1.25rem; /* Slightly smaller */
-    font-weight: 600;
-    margin-bottom: 0.5rem; /* Reduced margin */
-    text-align: center;
+  font-size: 1.25rem; /* Slightly smaller */
+  font-weight: 600;
+  margin-bottom: 0.5rem; /* Reduced margin */
+  text-align: center;
 }
-  
+
 /* Card Text */
 .highlights-section .card-text {
-    font-size: 0.9rem; /* Reduced text size */
-    line-height: 1.4; /* Tighter line spacing */
-    text-align: center;
-    margin-bottom: 0.5rem; /* Reduced margin */
+  font-size: 0.9rem; /* Reduced text size */
+  line-height: 1.4; /* Tighter line spacing */
+  text-align: center;
+  margin-bottom: 0.5rem; /* Reduced margin */
 }
-  
+
 /* Adjust Spacing Between Cards */
 .highlights-section .row {
-    gap: 1.5rem;
+  gap: 1.5rem;
 }
-  
+
 /* Responsive Design */
-  
+
 @media (min-width: 992px) {
-    .card {
-        flex: 1 1 calc(33.333% - 2rem);
-        max-width: calc(33.333% - 2rem);
-    }
+  .card {
+    flex: 1 1 calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
+  }
 }
-  
+
 @media (max-width: 991px) {
-    .card {
-        flex: 1 1 calc(50% - 2rem);
-        max-width: calc(50% - 2rem);
-    }
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+  }
 }
-  
+
 @media (max-width: 576px) {
-    .card {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
 .card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+/* General Animation Keyframes */
+@keyframes fadeIn {
+  from {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
   }
-  
-  .card.visible {
+  to {
     opacity: 1;
     transform: translateY(0);
   }
-  
-  .card.hidden {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  /* General Animation Keyframes */
-@keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Apply the Animation to Cards */
-  .animated-card {
-    opacity: 0;
-    animation: fadeIn 0.6s ease-in-out forwards;
-  }
-  
-  /* Sequential Animation Delays */
-  .animated-card:nth-child(1) {
-    animation-delay: 0.2s;
-  }
-  
-  .animated-card:nth-child(2) {
-    animation-delay: 0.4s;
-  }
-  
-  .animated-card:nth-child(3) {
-    animation-delay: 0.6s;
-  }
-  
-  .animated-card:nth-child(4) {
-    animation-delay: 0.8s;
-  }
-  
-  .animated-card:nth-child(5) {
-    animation-delay: 1s;
-  }
-  
+}
+
+/* Apply the Animation to Cards */
+.animated-card {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+/* Sequential Animation Delays */
+.animated-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.animated-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.animated-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.animated-card:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.animated-card:nth-child(5) {
+  animation-delay: 1s;
+}

@@ -1,93 +1,66 @@
-import React, { useState, useEffect } from "react";
-import { useRouter } from "next/navigation"; // Use `useRouter` from `next/navigation`
-import "./css/hero.css";
+import "../components/css/Highlights.css";
 
-// Logo URL
-const logo = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/Sanskriti-RKT.png`;
+const foodImg = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/food.png`;
+const supportImg = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/support.png`;
+const certificateImg = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/certificate.png`;
+const trophyImg = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/trophy.png`;
+const contestImg = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/contest.png`;
 
-const Hero = () => {
-  const [isOverlayVisible, setIsOverlayVisible] = useState(false);
-  const [isLogoVisible, setIsLogoVisible] = useState(false);
-  const [isTitleVisible, setIsTitleVisible] = useState(false);
-  const [isDateVisible, setIsDateVisible] = useState(false);
-  const [isButtonVisible, setIsButtonVisible] = useState(false);
-
-  const router = useRouter(); // Now using `useRouter` from `next/navigation`
-
-  useEffect(() => {
-    // Overlay animation starts first
-    const overlayTimeout = setTimeout(() => setIsOverlayVisible(true), 50);
-
-    // Logo appears after overlay
-    const logoTimeout = setTimeout(() => setIsLogoVisible(true), 50);
-
-    // Title appears after logo
-    const titleTimeout = setTimeout(() => setIsTitleVisible(true), 100);
-
-    // Date appears after title
-    const dateTimeout = setTimeout(() => setIsDateVisible(true), 200);
-
-    // Button appears last
-    const buttonTimeout = setTimeout(() => setIsButtonVisible(true), 200);
-
-    // Cleanup timeouts when component is unmounted
-    return () => {
-      clearTimeout(overlayTimeout);
-      clearTimeout(logoTimeout);
-      clearTimeout(titleTimeout);
-      clearTimeout(dateTimeout);
-      clearTimeout(buttonTimeout);
-    };
-  }, []);
-
-  const handleButtonClick = () => {
-    router.push("https://www.tickettailor.com/events/sanskritirkt2025/1434827");
-  };
+const Highlights = () => {
+  const cardData = [
+    {
+      img: trophyImg,
+      title: "Trophy & Medals",
+      text: "Special trophy & medals for winners in each category.",
+    },
+    {
+      img: certificateImg,
+      title: "Certificates",
+      text: "Certificates will be given for participation.",
+    },
+    {
+      img: contestImg,
+      title: "Contests",
+      text: "Kids can participate in more than one contest.",
+    },
+    {
+      img: foodImg,
+      title: "Tasty Food",
+      text: "Tasty Food available for purchase at Yugal Kunj all three days.",
+    },
+    {
+      img: supportImg,
+      title: "Support Activities",
+      text: "All proceeds support the charitable activities of JKYog & Radha Krishna Temple.",
+    },
+  ];
 
   return (
-    <section className="hero-section">
-      {isOverlayVisible && (
-        <div className="d-flex min-vh-100 justify-content-center align-items-center hero-background">
-          {/* Information Box */}
-          <div className="info-box text-center">
-            {/* Event Logo */}
-            {isLogoVisible && (
+    <section className="highlights-section py-5">
+      <h1 className="py-3 text-center">Highlights</h1>
+      <div className="container">
+        {cardData.map((card, index) => (
+          <div
+            key={index}
+            className="card animated-card animate__animated animate__fadeInUp"
+          >
+            <div className="card-image">
               <img
-                src={logo}
-                alt="Sanskriti RKT 2025 Logo"
-                className="event-logo"
-                width={400} // Adjust width as needed
-                height={300} // Adjust height as needed
+                src={card.img}
+                alt={card.title}
+                width={300} // Set width for optimization
+                height={300} // Set height for optimization
+                className="card-img-top"
               />
-            )}
-
-            {/* Hero Title */}
-            {isTitleVisible && (
-              <h1 className="display-1 fw-bold title-txt-shadow">
-                Sanskriti RKT 2025
-              </h1>
-            )}
-
-            {/* Event Date */}
-            {isDateVisible && (
-              <p className="date-time-custom">24th - 26th January, 2025</p>
-            )}
-
-            {/* Register Button */}
-            {isButtonVisible && (
-              <button
-                className="btn button-custom btn-lg"
-                onClick={handleButtonClick}
-                aria-label="Register for Sanskriti RKT 2025"
-              >
-                Register Now
-              </button>
-            )}
+            </div>
+            <div className="card-body">
+              <h5 className="card-title">{card.title}</h5>
+              <p className="card-text">{card.text}</p>
+            </div>
           </div>
-        </div>
-      )}
+        ))}
+      </div>
     </section>
   );
 };
-
-export default Hero;
+export default Highlights;

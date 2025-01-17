@@ -65,7 +65,7 @@ export default function Home() {
     });
 
     return () => {
-      observer.disconnect(); // Cleanup observer on unmount
+      observer.disconnect();
     };
   }, []);
 
