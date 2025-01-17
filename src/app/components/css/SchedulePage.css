@@ -6,9 +6,7 @@
 }
 /* Schedule Container Styling */
 .schedule-container {
-  background-color: var(
-    --bg-color
-  ); /* Light beige or your page's theme background */
+  background-color: var(--bg-color); /* Light beige or your page's theme background */
   text-align: center;
   color: var(--secondary-color); /* Complementary text color */
   border-radius: 15px; /* Soft rounded corners */
@@ -21,15 +19,13 @@ h1 {
   letter-spacing: 0.1rem;
 }
 
-.info-list,
-.early-bird {
+.info-list, .early-bird {
   list-style: none; /* Remove default list styling */
   padding: 0;
   text-align: center; /* Align text for readability */
 }
 
-.info-list li,
-.bullet-header {
+.info-list li, .bullet-header {
   font-size: 1.4rem;
   margin-bottom: 1rem;
   color: var(--text-dark); /* Neutral text color */
@@ -61,9 +57,7 @@ h1 {
 }
 
 .header-banner:hover {
-  background-color: var(
-    --highlight-color
-  ); /* Change on hover for interactivity */
+  background-color: var(--highlight-color); /* Change on hover for interactivity */
   transition: background-color 0.3s ease;
 }
 
@@ -85,8 +79,7 @@ h1 {
     font-size: 1.5rem;
   }
 
-  .info-list li,
-  .sub-list li {
+  .info-list li, .sub-list li {
     font-size: 1rem;
   }
 }
@@ -135,15 +128,15 @@ h1 {
   font-style: italic;
 }
 
-.bullet-header {
-  color: var(--primary-color);
+.bullet-header{
+  color:var(--primary-color);
 }
 
-.bullet-content {
-  color: var(--secondary-color);
+.bullet-content{
+  color:var(--secondary-color);
 }
 .sub-list span {
-  color: var(--primary-color);
+  color:var(--primary-color);
 }
 
 /* Gallery Container */
@@ -245,21 +238,28 @@ h1 {
   object-fit: cover;
 }
 
-.day-card-details h5 svg {
-  margin-right: 0.5rem;
+
+.schedule-modal-photo {
+  width: auto; /* Dynamically adjust the width */
+  height: auto; /* Dynamically adjust the height */
+  max-width: 90%; /* Limit the image width to 90% of the viewport width */
+  max-height: 90vh; /* Limit the image height to 90% of the viewport height */
+  object-fit: contain; /* Ensure the entire image fits without cropping */
+  border-radius: 8px; /* Optional: Rounded corners for better aesthetics */
+  display: block; /* Center the image */
+  margin: 0 auto; /* Horizontally center the image */
 }
 
-.day-card-details ul {
-  padding-left: 1rem;
-  list-style-type: none;
-}
-
-.day-card-details ul li {
-  margin-bottom: 0.5rem;
-}
-
-.contest-type {
-  text-align: center;
+/* Close Button */
+.schedule-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
   font-size: 1.5rem;
   display: flex;
   align-items: center;

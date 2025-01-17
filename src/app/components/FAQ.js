@@ -25,11 +25,12 @@ const FAQ = () => {
             Dallas, Allen, TX.
           </li>
           <li>
-            <strong>The award ceremony is on</strong> 2nd Feb, 2025 (evening).
+            <strong>The award ceremony is on</strong> 2nd Feb, 2025 at 5 PM (1st
+            Floor Hall, CICE).
           </li>
           <li>
-            The final schedule will be posted in the third week of January,
-            2025.
+            To get access to the schedule, kindly visit{" "}
+            <a href="#schedule">Schedule</a>.
           </li>
         </ul>
       ),
