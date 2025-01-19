@@ -69,7 +69,7 @@ const FAQ = () => {
         <span>
           To get the access to the rules of the contests, kindly visit{" "}
           <a
-            href="https://www.radhakrishnatemple.net/sanskriti-rules"
+            href="https://www.radhakrishnatemple.net/sanskriti/all-rules"
             target="_blank"
             rel="noopener noreferrer"
           >
