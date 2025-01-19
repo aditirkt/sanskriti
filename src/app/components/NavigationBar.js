@@ -107,7 +107,7 @@ const NavigationBar = ({ onLinkClick }) => {
             ))}
           </Nav>
           <Nav.Link
-            href="https://www.radhakrishnatemple.net/Sanskriti-Volunteers"
+            href="https://jkyog.volunteerlocal.com/volunteer/?id=95406"
             onClick={closeNavbar}
           >
             Volunteer Opportunities

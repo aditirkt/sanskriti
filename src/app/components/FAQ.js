@@ -157,19 +157,13 @@ const FAQ = () => {
         <span>
           Fill out the volunteer form:{" "}
           <a
-            href="https://www.radhakrishnatemple.net/Sanskriti-Volunteers"
+            href="https://jkyog.volunteerlocal.com/volunteer/?id=95406"
             target="_blank"
             rel="noopener noreferrer"
           >
             Volunteer Opportunity
           </a>
-          <a
-            href="https://forms.gle/TeCeD1LcZasYzkDz7"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            .
-          </a>
+          .
         </span>
       ),
     },
