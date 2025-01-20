@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Rules from "../components/Rules";
 import Footer from "../components/Footer";
