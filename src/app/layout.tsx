@@ -69,39 +69,57 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
+        <meta name="author" content="Radha Krishna Temple of Dallas" />
+        <meta name="rating" content="General" />
         <link rel="canonical" href="https://radhakrishnatemple.net/sanskriti" />
+        <link rel="manifest" href="/manifest.json" />
+
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-XXXXXXX');
+            `,
+          }}
+        />
+
+        {/* JSON-LD for Event */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: `
-          {
-            "@context": "https://schema.org",
-            "@type": "Event",
-            "name": "SANSKRITI RKT 2025",
-            "description": "Join us for the Sanskriti Festival, a celebration of Indian culture, tradition, and devotion. Experience music, dance, and spiritual programs that bring the essence of India to life.",
-            "image": "https://www.radhakrishnatemple.net/sanskriti/images/testimonials.JPG",
-            "startDate": "2025-01-24",
-            "endDate": "2025-01-26",
-            "eventStatus": "https://schema.org/EventScheduled",
-            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-            "location": {
-              "@type": "Place",
-              "name": "Radha Krishna Temple of Dallas",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "1450 N. Watters Road",
-                "addressLocality": "Allen",
-                "addressRegion": "TX",
-                "postalCode": "75013",
-                "addressCountry": "US"
+              {
+                "@context": "https://schema.org",
+                "@type": "Event",
+                "name": "SANSKRITI RKT 2025",
+                "description": "Join us for the Sanskriti Festival, a celebration of Indian culture, tradition, and devotion. Experience music, dance, and spiritual programs that bring the essence of India to life.",
+                "image": "https://www.radhakrishnatemple.net/sanskriti/images/testimonials.JPG",
+                "startDate": "2025-01-20",
+                "endDate": "2025-01-26",
+                "eventStatus": "https://schema.org/EventScheduled",
+                "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                "location": {
+                  "@type": "Place",
+                  "name": "Radha Krishna Temple of Dallas",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "1450 N. Watters Road",
+                    "addressLocality": "Allen",
+                    "addressRegion": "TX",
+                    "postalCode": "75013",
+                    "addressCountry": "US"
+                  }
+                },
+                "performer": {
+                  "@type": "PerformingGroup",
+                  "name": "Radha Krishna Temple"
+                }
               }
-            },
-            "performer": {
-              "@type": "PerformingGroup",
-              "name": "Radha Krishna Temple"
-            }
-          }
-          `,
+            `,
           }}
         />
         <script
