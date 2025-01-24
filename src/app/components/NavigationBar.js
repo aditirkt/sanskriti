@@ -72,7 +72,7 @@ const NavigationBar = ({ onLinkClick }) => {
                 label: "Contests",
               },
               {
-                to: `/${process.env.NEXT_PUBLIC_IMAGE_URL}all-rules`,
+                to: `https://www.radhakrishnatemple.net/sanskriti/all-rules`,
                 label: "Rules",
               },
               {
