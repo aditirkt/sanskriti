@@ -30,35 +30,9 @@ const SchedulePage = () => {
       <div className="schedule-container">
         <h1 className="event-title">When</h1>
         <ul className="info-list">
-          <li>
-            <BulletHeader text="Deadline to Register">
-              <ul className="sub-list">
-                <li>
-                  <span>10th Jan 2025</span> for Scheduled On-Stage & Off-Stage
-                  Contests
-                </li>
-                <li>
-                  <span>25th Jan 2025</span> for Walk-In/ Off-Stage Contests
-                </li>
-              </ul>
-            </BulletHeader>
-          </li>
-          <li>
-            <BulletHeader text="Date">24th – 26th Jan, 2025</BulletHeader>
-          </li>
-          <li>
-            <BulletHeader text="Competition Days" />
-            <ul className="sub-list">
-              <li>24th Jan: 5 pm - 9 pm</li>
-              <li>25th Jan: 9 am - 9 pm</li>
-              <li>26th Jan: 10 am - 5 pm</li>
-            </ul>
-          </li>
-          <li>
-            <BulletHeader text="Award Ceremony">
-              2nd Feb, 2025 at 5 PM (1st Floor Hall, CICE)
-            </BulletHeader>
-          </li>
+          <BulletHeader text="Award Ceremony">
+            2nd Feb, 2025 at 6 PM (1st Floor Hall, CICE)
+          </BulletHeader>
         </ul>
         <BulletHeader text="Schedule"></BulletHeader>
         <div className="schedule-gallery">
