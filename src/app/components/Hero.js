@@ -8,7 +8,7 @@ const logo = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/Sanskriti-RKT.png`;
 const Hero = () => {
   const router = useRouter(); // Now using `useRouter` from `next/navigation`
   const handleButtonClick = () => {
-    router.push("https://www.tickettailor.com/events/sanskritirkt2025/1434827");
+    router.push("https://rktdallas.live/sanskriti-awards-rsvp");
   };
 
   return (
