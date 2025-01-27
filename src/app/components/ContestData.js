@@ -259,7 +259,7 @@ const contestData = {
         timeLimit: "90 mins",
         thingsToBring:
           "Pencil, sharpener, eraser, coloring material (watercolors, acrylic paints, color pencils, etc.), paint brushes",
-        remarks: "Sheet to draw and paint will be provided.",
+        remarks: "Sheet to draw/paint will be provided.",
       },
     },
     {
