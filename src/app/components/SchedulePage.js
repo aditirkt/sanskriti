@@ -31,7 +31,7 @@ const SchedulePage = () => {
         <h1 className="event-title">When</h1>
         <ul className="info-list">
           <BulletHeader text="Award Ceremony">
-            2nd Feb, 2025 at 6 PM (1st Floor Hall, CICE)
+            2nd Feb, 2025 at 4:45 PM (1st Floor Hall, CICE)
           </BulletHeader>
         </ul>
         <BulletHeader text="Schedule"></BulletHeader>

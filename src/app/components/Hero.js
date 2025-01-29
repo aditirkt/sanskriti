@@ -34,7 +34,7 @@ const Hero = () => {
 
           {/* Event Date */}
 
-          <p className="date-time-custom">February 2nd, 2025</p>
+          <p className="date-time-custom">February 2nd, 2025 at 4:45 PM</p>
 
           {/* Register Button */}
 

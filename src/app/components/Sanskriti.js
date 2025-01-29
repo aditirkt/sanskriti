@@ -12,8 +12,8 @@ const Sanskriti = () => {
 
         <p className="content">
           Join us in celebrating the vibrant talents of our community at the
-          Sanskriti Awards Ceremony on February 2nd at 6 PM at the Radha Krishna
-          Temple of Dallas!
+          Sanskriti Awards Ceremony on February 2nd at 4:45 PM at the Radha
+          Krishna Temple of Dallas!
           <p>
             This grand event, honoring the winners of the cultural competition
             held from January 24th to 26th, promises an unforgettable evening of
