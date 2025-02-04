@@ -6,7 +6,9 @@
 }
 /* Schedule Container Styling */
 .schedule-container {
-  background-color: var(--bg-color); /* Light beige or your page's theme background */
+  background-color: var(
+    --bg-color
+  ); /* Light beige or your page's theme background */
   text-align: center;
   color: var(--secondary-color); /* Complementary text color */
   border-radius: 15px; /* Soft rounded corners */
@@ -19,13 +21,15 @@ h1 {
   letter-spacing: 0.1rem;
 }
 
-.info-list, .early-bird {
+.info-list,
+.early-bird {
   list-style: none; /* Remove default list styling */
   padding: 0;
   text-align: center; /* Align text for readability */
 }
 
-.info-list li, .bullet-header {
+.info-list li,
+.bullet-header {
   font-size: 1.4rem;
   margin-bottom: 1rem;
   color: var(--text-dark); /* Neutral text color */
@@ -57,7 +61,9 @@ h1 {
 }
 
 .header-banner:hover {
-  background-color: var(--highlight-color); /* Change on hover for interactivity */
+  background-color: var(
+    --highlight-color
+  ); /* Change on hover for interactivity */
   transition: background-color 0.3s ease;
 }
 
@@ -79,7 +85,8 @@ h1 {
     font-size: 1.5rem;
   }
 
-  .info-list li, .sub-list li {
+  .info-list li,
+  .sub-list li {
     font-size: 1rem;
   }
 }
@@ -128,147 +135,20 @@ h1 {
   font-style: italic;
 }
 
-.bullet-header{
-  color:var(--primary-color);
+.bullet-header {
+  color: var(--primary-color);
 }
 
-.bullet-content{
-  color:var(--secondary-color);
+.bullet-content {
+  color: var(--secondary-color);
 }
 .sub-list span {
-  color:var(--primary-color);
+  color: var(--primary-color);
 }
 
-/* Gallery Container */
-.schedule-gallery {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-/* Thumbnails Container */
-.schedule-gallery .schedule-thumbnails {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-/* Thumbnail Images */
-.schedule-gallery .thumbnail {
-  width: 180px; /* Slightly smaller width for better compactness */
-  height: 255px; /* Maintain proportional height based on the original image aspect ratio */
-  object-fit: cover; /* Ensures the image fills the thumbnail while preserving its aspect ratio */
-  border-radius: 8px; /* Rounded corners for a polished look */
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.schedule-gallery .thumbnail:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Gallery Container */
-.schedule-gallery {
-  margin: 2rem 0;
-}
-
-/* Thumbnails Container */
-.schedule-gallery .schedule-thumbnails {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-/* Thumbnail Images */
-.schedule-gallery .thumbnail {
-  width: 180px;
-  height: 255px;
-  object-fit: cover;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.schedule-gallery .thumbnail:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Expanded Image in schedule-modal */
-.schedule-gallery .expanded-image {
-  width: auto; /* Adjust width dynamically to maintain aspect ratio */
-  height: auto; /* Adjust height dynamically to maintain aspect ratio */
-  max-width: 90%; /* Limit the image width to 90% of the viewport width */
-  max-height: 90vh; /* Limit the image height to 90% of the viewport height */
-  object-fit: contain; /* Ensure the image is fully visible without cropping */
-  display: block; /* Center the image */
-  margin: 0 auto; /* Horizontal centering */
-  border-radius: 8px; /* Optional: Rounded corners for a polished look */
-}
-
-/* schedule-modal Styles */
-.schedule-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  backdrop-filter: blur(5px);
-}
-
-.schedule-modal-content {
-  position: relative;
-  background: white;
-  border-radius: 15px;
-  padding: 20px;
-  max-width: 90%;
-  max-height: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  object-fit: cover;
-}
-
-
-.schedule-modal-photo {
-  width: auto; /* Dynamically adjust the width */
-  height: auto; /* Dynamically adjust the height */
-  max-width: 90%; /* Limit the image width to 90% of the viewport width */
-  max-height: 90vh; /* Limit the image height to 90% of the viewport height */
-  object-fit: contain; /* Ensure the entire image fits without cropping */
-  border-radius: 8px; /* Optional: Rounded corners for better aesthetics */
-  display: block; /* Center the image */
-  margin: 0 auto; /* Horizontally center the image */
-}
-
-/* Close Button */
-.schedule-close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.8);
-  border: none;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.schedule-close-btn:hover {
-  background: #ff6f61;
-  color: white;
+.schedule-para {
+  color: var(--secondary-color);
+  padding-left: 2rem;
+  margin-top: 1rem;
+  font-size: 1.1rem;
 }

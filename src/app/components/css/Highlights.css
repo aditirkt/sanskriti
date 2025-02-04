@@ -162,3 +162,10 @@
 .animated-card:nth-child(5) {
   animation-delay: 1s;
 }
+
+.schedule-para {
+  color: var(--secondary-color);
+  padding-left: 2rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}

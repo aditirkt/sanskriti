@@ -1,0 +1,154 @@
+.result-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.result-para {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.text-hyperlink {
+  color: var(--third-color);
+}
+
+.winner-list {
+  text-align: center;
+  color: var(--primary-color);
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
+/* Winners Page Styles */
+.winners-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title & Subtitle */
+.winners-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.winners-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Alert Box */
+.winners-alert {
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Survey Link */
+.winners-survey {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.survey-link {
+  color: var(--third-color);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.survey-link:hover {
+  color: #c9302c;
+}
+
+/* Winners List */
+.winners-list {
+  margin-top: 30px;
+}
+
+.winners-list-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Contest Section */
+.contest-section {
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+/* Contest Header */
+.contest-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* Contest Name */
+.contest-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Toggle Icon */
+.toggle-icon {
+  font-size: 1.5rem;
+}
+
+/* Contest Details */
+.contest-details {
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Group Section */
+.group-section {
+  margin-top: 15px;
+}
+
+.group-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Winners Table */
+.winners-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.winners-table th,
+.winners-table td {
+  border: 1px solid var(--primary-color);
+  padding: 8px;
+  text-align: left;
+}
+
+.winners-table th {
+  color: var(--primary-color);
+}
+
+.winners-table tr:nth-child(even) {
+  background: #f2f2f2;
+}

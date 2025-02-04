@@ -59,13 +59,14 @@ const NavigationBar = ({ onLinkClick }) => {
             {/* Mapping over the links to reduce repetition */}
             {[
               { to: `/${process.env.NEXT_PUBLIC_IMAGE_URL}`, label: "Home" },
-              {
-                to: `/${process.env.NEXT_PUBLIC_IMAGE_URL}#schedule`,
-                label: "Schedule",
-              },
+
               {
                 to: `/${process.env.NEXT_PUBLIC_IMAGE_URL}#highlights`,
                 label: "Highlights",
+              },
+              {
+                to: `/${process.env.NEXT_PUBLIC_IMAGE_URL}#glimpses`,
+                label: "Glimpses of Sanskriti",
               },
               {
                 to: `/${process.env.NEXT_PUBLIC_IMAGE_URL}#contests`,
@@ -107,10 +108,12 @@ const NavigationBar = ({ onLinkClick }) => {
             ))}
           </Nav>
           <Nav.Link
-            href="https://jkyog.volunteerlocal.com/volunteer/?id=95406"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdMJZzHs78G8qI0L59wX-14dZhWvWfL-V9MScFSe97_g2gEBQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={closeNavbar}
           >
-            Volunteer Opportunities
+            Feedback
           </Nav.Link>
         </Navbar.Collapse>
       </Container>

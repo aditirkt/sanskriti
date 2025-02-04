@@ -9,22 +9,6 @@ const BulletHeader = ({ text, children }) => (
 );
 
 const SchedulePage = () => {
-  const [selectedImage, setSelectedImage] = useState(null);
-
-  const handleImageClick = (image) => {
-    setSelectedImage(image);
-  };
-
-  const handleClose = () => {
-    setSelectedImage(null);
-  };
-
-  const images = [
-    `${process.env.NEXT_PUBLIC_IMAGE_URL || ""}/images/day1.jpeg`,
-    `${process.env.NEXT_PUBLIC_IMAGE_URL || ""}/images/day2.jpeg`,
-    `${process.env.NEXT_PUBLIC_IMAGE_URL || ""}/images/day3.jpeg`,
-  ];
-
   return (
     <section className="schedule-section">
       <div className="schedule-container">
@@ -33,40 +17,23 @@ const SchedulePage = () => {
           <BulletHeader text="Award Ceremony">
             2nd Feb, 2025 at 4:45 PM (1st Floor Hall, CICE)
           </BulletHeader>
-        </ul>
-        <BulletHeader text="Schedule"></BulletHeader>
-        <div className="schedule-gallery">
-          {/* Thumbnails */}
-          <div className="schedule-thumbnails">
-            {images.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`Thumbnail ${index + 1}`}
-                className="thumbnail"
-                onClick={() => handleImageClick(image)}
-              />
-            ))}
+          <div className="schedule-para">
+            Click Here to{" "}
+            <a
+              href={`${process.env.NEXT_PUBLIC_IMAGE_URL}winners`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="result-link"
+            >
+              Watch the Results
+            </a>
           </div>
-
-          {selectedImage && (
-            <div className="schedule-modal" onClick={handleClose}>
-              <div
-                className="schedule-modal-content"
-                onClick={(e) => e.stopPropagation()}
-              >
-                <img
-                  src={selectedImage}
-                  alt="Expanded view"
-                  className="schedule-modal-photo"
-                />
-                <button className="schedule-close-btn" onClick={handleClose}>
-                  &times;
-                </button>
-              </div>
-            </div>
-          )}
-        </div>
+          <div className="schedule-para">
+            Please collect your awards/ participation certificate/Artwork on
+            Sunday, Feb 9th, 2025 from Wellness Center (11:30-12:30 pm), in case
+            you have not collected it.{" "}
+          </div>
+        </ul>
       </div>
     </section>
   );

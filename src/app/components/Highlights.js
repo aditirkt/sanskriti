@@ -60,6 +60,22 @@ const Highlights = () => {
           </div>
         ))}
       </div>
+      <div className="schedule-para">
+        Click Here to{" "}
+        <a
+          href={`${process.env.NEXT_PUBLIC_IMAGE_URL}/winners`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="result-link"
+        >
+          Watch the Results
+        </a>
+      </div>
+      <div className="schedule-para">
+        Please collect your awards/ participation certificate/Artwork on Sunday,
+        Feb 9th, 2025 from Wellness Center (11:30-12:30 pm), in case you have
+        not collected it.{" "}
+      </div>
     </section>
   );
 };

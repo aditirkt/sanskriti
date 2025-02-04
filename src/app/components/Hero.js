@@ -7,9 +7,6 @@ const logo = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/Sanskriti-RKT.png`;
 
 const Hero = () => {
   const router = useRouter(); // Now using `useRouter` from `next/navigation`
-  const handleButtonClick = () => {
-    router.push("https://rktdallas.live/sanskriti-awards-rsvp");
-  };
 
   return (
     <section className="hero-section">
@@ -35,16 +32,6 @@ const Hero = () => {
           {/* Event Date */}
 
           <p className="date-time-custom">February 2nd, 2025 at 4:45 PM</p>
-
-          {/* Register Button */}
-
-          <button
-            className="btn button-custom btn-lg"
-            onClick={handleButtonClick}
-            aria-label="Register for Sanskriti RKT 2025"
-          >
-            RSVP
-          </button>
         </div>
       </div>
     </section>

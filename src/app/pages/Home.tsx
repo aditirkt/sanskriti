@@ -14,6 +14,7 @@ import SchedulePage from "../components/SchedulePage.js";
 import "../components/css/Home.css";
 import Sponsors from "./Sponsors.js";
 import Footer from "../components/Footer.jsx";
+import Glimpses from "../components/Glimpses.js";
 
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
@@ -79,11 +80,12 @@ export default function Home() {
         <section id="sanskriti" className="anim-section">
           <Sanskriti />
         </section>
-        <section id="schedule" className="anim-section">
-          <SchedulePage />
-        </section>
+
         <section id="highlights" className="anim-section">
           <Highlights />
+        </section>
+        <section id="glimpses" className="anim-section">
+          <Glimpses />
         </section>
         <section id="contests" className="anim-section">
           <Contests />
