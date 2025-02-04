@@ -169,3 +169,7 @@
   margin-top: 1rem;
   font-size: 1.5rem;
 }
+
+.orange-text {
+  color: var(--primary-color);
+}

@@ -1686,9 +1686,10 @@ const WinnersPage: React.FC = () => {
       {/* Award Collection Info */}
       <div className="winners-alert">
         <strong>Please collect your awards/participation certificate on</strong>{" "}
-        <strong>Sunday, February 9th, 2025</strong> from{" "}
-        <strong>11:30 AM - 12:30 PM</strong> at <strong>Wellness Center</strong>
-        , in case you have not collected it.
+        <span className="orange-text">Sunday, February 9th or 16th, 2025</span>{" "}
+        from <span className="orange-text">11:30 AM - 12:30 PM</span> at{" "}
+        <span className="orange-text">Wellness Center</span>, in case you have
+        not collected it.
       </div>
 
       {/* Survey Call-to-Action */}

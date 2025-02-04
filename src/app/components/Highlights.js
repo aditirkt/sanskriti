@@ -72,9 +72,10 @@ const Highlights = () => {
         </a>
       </div>
       <div className="schedule-para">
-        Please collect your awards/ participation certificate/Artwork on Sunday,
-        Feb 9th, 2025 from Wellness Center (11:30-12:30 pm), in case you have
-        not collected it.{" "}
+        Please collect your awards/ participation certificate/Artwork on{" "}
+        <span className="orange-text">Sunday, Feb 9th or 16th, 2025</span> from{" "}
+        <span className="orange-text">Wellness Center (11:30-12:30 pm)</span>,
+        in case you have not collected it.{" "}
       </div>
     </section>
   );
