@@ -63,7 +63,7 @@ const Highlights = () => {
       <div className="schedule-para">
         Click Here to{" "}
         <a
-          href={`${process.env.NEXT_PUBLIC_IMAGE_URL}/winners`}
+          href="https://www.radhakrishnatemple.net/sanskriti/winners"
           target="_blank"
           rel="noopener noreferrer"
           className="result-link"
