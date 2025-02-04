@@ -1,13 +1,10 @@
 import React from "react";
-import { useRouter } from "next/navigation"; // Use `useRouter` from `next/navigation`
 import "./css/hero.css";
 
 // Logo URL
 const logo = `${process.env.NEXT_PUBLIC_IMAGE_URL}/images/Sanskriti-RKT.png`;
 
 const Hero = () => {
-  const router = useRouter(); // Now using `useRouter` from `next/navigation`
-
   return (
     <section className="hero-section">
       <div className="d-flex min-vh-100 justify-content-center align-items-center hero-background">

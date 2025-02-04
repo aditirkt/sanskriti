@@ -10,7 +10,6 @@ import Testimonials from "../components/Testimonials";
 import Sanskriti from "../components/Sanskriti";
 import PhotoGallery from "../components/PhotoGallery";
 import FAQ from "../components/FAQ.js";
-import SchedulePage from "../components/SchedulePage.js";
 import "../components/css/Home.css";
 import Sponsors from "./Sponsors.js";
 import Footer from "../components/Footer.jsx";
