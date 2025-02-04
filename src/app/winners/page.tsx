@@ -1353,6 +1353,16 @@ const winnersData: Contest[] = [
     contestName: "Instrument",
     groups: [
       {
+        groupName: "Group 1: 5-7 yrs",
+        winners: [
+          {
+            position: "Judge's Special Award",
+            name: "Antriksha Sharma & Viona Modi",
+          },
+        ],
+      },
+
+      {
         groupName: "Group 2: 8-10 yrs",
         winners: [
           {
