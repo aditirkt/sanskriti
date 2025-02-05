@@ -340,7 +340,7 @@ const winnersData: Contest[] = [
           },
           {
             position: "3rd Prize",
-            name: "Diamond girls, Muffin Academy- Narasapally and Dynamic Dancers",
+            name: "Diamond girls, MUFIN Academy- Narasapally and Dynamic Dancers",
           },
         ],
       },
@@ -480,7 +480,7 @@ const winnersData: Contest[] = [
           },
           {
             position: "3rd Prize",
-            name: "Anisha Singhal",
+            name: "Anesha Singhal",
           },
           {
             position: "Honorable Mention",
@@ -1375,7 +1375,7 @@ const winnersData: Contest[] = [
           },
           {
             position: "3rd Prize",
-            name: "Pranav Karthik, Santosh Kumar Narayana, Hishal kartik Vutukuru",
+            name: "Pranav Karthik, Abhay Santosh, Hishal kartik Vutukuru",
           },
         ],
       },
@@ -1506,7 +1506,7 @@ const winnersData: Contest[] = [
       {
         groupName: "Group 2: 8-10 yrs",
         winners: [
-          { position: "Enthusiastic Participant", name: "Muffin Academy" },
+          { position: "Enthusiastic Participant", name: "MUFIN Academy" },
         ],
       },
       {
@@ -1522,7 +1522,7 @@ const winnersData: Contest[] = [
           },
           {
             position: "3rd Prize",
-            name: "Muffin Academy - Rama Rama neevaramu",
+            name: "MUFIN Academy - Rama Rama neevaramu",
           },
         ],
       },
@@ -1618,7 +1618,12 @@ const winnersData: Contest[] = [
     groups: [
       {
         groupName: "Group 1: 5-7 yrs",
-        winners: [{ position: "Enthusiastic Participant", name: "Krishna" }],
+        winners: [
+          {
+            position: "Enthusiastic Participant",
+            name: "Mufin Academy- Sambo Maha Deva",
+          },
+        ],
       },
       {
         groupName: "Group 2: 8-10 yrs",
@@ -1642,7 +1647,7 @@ const winnersData: Contest[] = [
         winners: [
           {
             position: "1st Prize",
-            name: "Muffin Academy - Thiro thiro",
+            name: "MUFIN Academy - Thiro thiro",
           },
           {
             position: "2nd Prize",
@@ -1663,11 +1668,11 @@ const winnersData: Contest[] = [
           },
           {
             position: "2nd Prize",
-            name: "Muffin Academy-Kaya Hi Pandari Song",
+            name: "MUFIN Academy-Kaya Hi Pandari Song",
           },
           {
             position: "3rd Prize",
-            name: "DG4 Team",
+            name: "Mahati Music School-DG4",
           },
         ],
       },
